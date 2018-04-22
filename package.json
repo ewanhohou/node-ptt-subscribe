@@ -1,0 +1,31 @@
+{
+  "name": "ptt-subscribe",
+  "version": "1.0.0",
+  "description": "ptt-subscribe",
+  "main": "subscribe.js",
+  "scripts": {
+    "test": "node subscribe.js",
+    "start": "node subscribe.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ewanhohou/node-ptt-subscribe.git"
+  },
+  "keywords": [
+    "node",
+    "ptt"
+  ],
+  "author": "Ewan Hou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ewanhohou/node-ptt-subscribe/issues"
+  },
+  "homepage": "https://github.com/ewanhohou/node-ptt-subscribe#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "dotenv": "^5.0.1",
+    "node-schedule": "^1.3.0",
+    "nodemailer": "^4.6.4",
+    "request": "^2.85.0"
+  }
+}
