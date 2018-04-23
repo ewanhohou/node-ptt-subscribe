@@ -11,7 +11,6 @@ const author = process.env.AUTHOR;
 const authorArray = process.env.AUTHOR ? process.env.AUTHOR.split(',') : []; ////需訂閱的作者
 const scanTime = process.env.SCAN_TIME || 30; //(s)schedule 
 let articleUrlArray = []; //檢查重複
-let pttList = [];
 
 const date2str = (x, y) => {
   var z = {
@@ -32,7 +31,6 @@ const date2str = (x, y) => {
 const getPttList = () => {
   pttInfo.pttList((list) => {
     // console.log(list);
-    pttList = list;
     let body = '';
     list.forEach(article => {
       const date = new Date(parseInt(article.timestamp + '000'));

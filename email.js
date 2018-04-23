@@ -1,6 +1,5 @@
 const nodemailer = require('nodemailer');
 const credentials = require('./credentials');
-//宣告發信物件
 const transporter = nodemailer.createTransport({
   service: 'Gmail',
   auth: {
@@ -16,8 +15,8 @@ exports.send = function (to, subject, body) {
     //收件者
     to: to,
     //主旨
-    subject: subject, // Subject line
-    //嵌入 html 的內文
+    subject: subject,
+    //html 的內文
     html: body,
   };
   //發送信件方法
